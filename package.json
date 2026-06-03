@@ -1,0 +1,47 @@
+{
+  "name": "appmon",
+  "version": "1.0.0",
+  "description": "Realtime network monitoring for Mikrotik & generic devices (ping, port up/down, traffic, SLA)",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "web:dev": "vite --config web/vite.config.js",
+    "web:build": "vite build --config web/vite.config.js",
+    "web:preview": "vite preview --config web/vite.config.js",
+    "build": "npm run web:build"
+  },
+  "keywords": [
+    "monitoring",
+    "mikrotik",
+    "routeros",
+    "ping",
+    "sla",
+    "snmp",
+    "noc"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^11.8.1",
+    "compression": "^1.7.5",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "leaflet": "^1.9.4",
+    "net-snmp": "^3.26.3",
+    "node-routeros": "^1.6.8",
+    "ping": "^0.4.4",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.4",
+    "vite": "^5.4.10",
+    "vue": "^3.5.13"
+  },
+  "packageManager": "pnpm@10.33.2+sha512.a90faf6feeab71ad6c6e57f94e0fe1a12f5dcc22cd754db40ae9593eb6a3e0b6b12e3540218bb37ae083404b1f2ce6db2a4121e979829b4aff94b99f49da1cf8"
+}

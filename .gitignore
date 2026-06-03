@@ -1,0 +1,4 @@
+node_modules/
+dist/
+appmon.db
+.env
