@@ -1,4 +1,9 @@
 node_modules/
 dist/
 appmon.db
+appmon.db-shm
+appmon.db-wal
+data/*.db
+data/*.db-shm
+data/*.db-wal
 .env
